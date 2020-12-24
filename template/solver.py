@@ -1,18 +1,14 @@
+from logging import basicConfig, info, debug, log, DEBUG, INFO
+basicConfig(level=INFO, format='%(message)s')
+
 fn = "input.txt"
 fn = "test.txt"
-
-def part1(data):
-    pass
-
-def part2(data):
-    pass
+# fn = "test2.txt"
 
 # parse the data
-data = []
-for line in open(fn):
-    l = line.split()
-    data.append(l)
+# data = open(fn).readlines()
 
-part1(data)
+# for line in open(fn):
+#     pass
 
-part2(data)
+data = open(fn).read().split('\n\n')

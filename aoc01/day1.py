@@ -1,3 +1,5 @@
+fn = "input.txt"
+fn = "test.txt"
 from math      import prod
 from itertools import product
 
@@ -7,6 +9,6 @@ def solve(data, n, label):
             print(f'{label}: {prod(group)}')
             return
 
-data = list(map(int, open('input.txt').readlines()))
+data = list(map(int, open(fn).readlines()))
 solve(data, 2, 'Part 1')
 solve(data, 3, 'Part 2')
